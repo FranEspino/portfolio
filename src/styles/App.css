@@ -2,19 +2,19 @@ model-viewer {
   width: 500px;
   height: 800px;
 }
+.borderCard{
+  border-left: 2px solid #17151F;
+}
 .model{
-  margin-left: 6em;
-  margin-top: -13em;
+
+  margin: auto;
 }
 @media (max-width: 600px) {
   model-viewer {
     width: 400px;
     height: 600px;
   }
- .model{
 
-  margin-top: -4em;
-}
 }
 
 .dark-mode {
@@ -53,6 +53,8 @@ model-viewer {
 
 
   .darkColor{
-    background: #17151F;
-    opacity: 0.99;
+    background: rgba(0, 0, 0, 0.8);
+    line-height: 1;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(10px);
   }

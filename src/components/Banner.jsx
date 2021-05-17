@@ -10,7 +10,7 @@ const Banner = () => {
   let cardOne = useRef(null);
   let cardTwo = useRef(null);
 
-  let t1 = new TimelineLite({ delay: 0.6 }); //para asegurar la carga de la animacion
+  let t1 = new TimelineLite({ delay: 0.8 }); //para asegurar la carga de la animacion
 
   useEffect(() => {
     /* TweenMax.to(foto, 10, { css: { visibility: 'visible' } });
@@ -48,26 +48,25 @@ const Banner = () => {
       { scale: 0.1, ease: Power3.easeOut },
       0.2
     );
-    console.log("gelñ")
   },[]);
 
   return (
-    <div className=" m-auto  sm:max-w-xl mt-20  md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 ">
-      <div className="m-6 md:grid md:gap-5 lg:grid-cols-2 sm:flex sm:flex-col-reverse md:row-gap-8">
-        <div className="flex flex-col  justify-cemter">
-          <div className="max-w-xl mb-6  ">
+    <div className="">
+      <div className="flex  flex-col lg:flex-row justify-between ">
+        <div className="sm:w-full sm:mt-16 md:w-1/2 md:p-12 md:ml-16">
+          <div className="sm:mt-8 ">
             <h2
               ref={(el) => {
                 titulo1 = el;
               }}
-              className="max-w-lg mb-6 font-sans text-xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none"
+              className="font-bold text-4xl mt-16 sm: p-8 md:p-0"
             >
               Hi! I'm Fran 
-              <br className="hidden md:block" />I develop systems that
-              <span className="relative px-1">
-                <div className="absolute inset-x-0 bottom-0 h-3 transform -skew-x-12 bg-teal-accent-400" />
+              <br className="" />I develop systems that
+              <span className="">
+                <div className="" />
                 <span
-                  className={`relative inline-block text-deep-purple-accent-400  text_primary pb-4 bg-gradient-to-t  h-9 `}
+                  className={``}
                 >
                   generate incredible experiences.
                 </span>
@@ -77,25 +76,25 @@ const Banner = () => {
               ref={(el) => {
                 titulo2 = el;
               }}
-              className="text-base text-gray-700 md:text-lg"
+              className="font-normal text-2xl  md:mt-8 sm: p-8 md:p-0 "
             >
               Nice to meet you! I know that my portfolio is not perfect but
               these were developed with a lot of effort,
             </p>
           </div>
-          <div className="grid gap-5 row-gap-8 sm:grid-cols-2">
+          <div className="mt-8 flex flex-col-reverse md:flex-row  sm: p-8 md:p-0">
             <div
               ref={(el) => {
                 cardOne = el;
               }}
-              className=" shadow-lg border-deep-purple"
+              className=" shadow-lg mt-4 mr-0 md:mr-4 md:mt-0"
             >
-              <div className="h-full p-5 border-l-2 borderCard rounded-r">
+              <div className="h-full  p-5 border-l-2 borderCard rounded-r">
                 <h6 className="mb-2 font-semibold leading-5">
-                  I'll be sure to note
+                  A business big that 1
                 </h6>
                 <p className="text-sm text-gray-900">
-                  Lookout flogging bilge rat main sheet bilge
+                  Those options are already baked in with.
                 </p>
               </div>
             </div>
@@ -103,11 +102,11 @@ const Banner = () => {
               ref={(el) => {
                 cardTwo = el;
               }}
-              className="  shadow-lg border-deep-purple"
+              className="shadow-lg"
             >
               <div className="h-full  p-5 border-l-2 borderCard rounded-r">
                 <h6 className="mb-2 font-semibold leading-5">
-                  A business big that
+                  A business big that 2
                 </h6>
                 <p className="text-sm text-gray-900">
                   Those options are already baked in with.
